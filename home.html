@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Facebook - Social Networking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/bs/bootstrap.min.css" />
+	<link rel="icon" type="image/x-icon" href="img/ico.png">
+	<link rel="stylesheet" type="text/css" href="css/web-fonts-with-css/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<style>
+	</style>
+</head>
+<body>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <a class="navbar-brand w-25 pl-4" href="#">Facebook</a>
+
+			<form class="form-inline frm-srch my-2 my-lg-0 w-50">
+	      <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn" type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+	    </form>
+	    <ul class="navbar-nav w-25 justify-content-center">
+				<li class="nav-item msgs">
+	        <a class="nav-link" href="#" title="Messages">
+						<i class="fab fa-facebook-messenger"></i>
+					</a>
+	      </li>
+				<li class="nav-item notf">
+	        <a class="nav-link" href="#" title="Notification">
+						<i class="fa fa-bell"></i>
+					</a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" data-toggle="dropdown" href="profile.html" title="Profile">
+						<img src="img/profile.jpg" class="dp rounded-circle" />
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<button class="dropdown-item" type="button">
+							<a href="profile.html" title="Profile">
+								<i class="fas fa-user"></i> My Profile
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="setting.html" title="Setting">
+								<i class="fas fa-cog"></i> Setting
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="login.html" title="Logout">
+								<i class="fas fa-sign-out-alt"></i> Logout
+							</a>
+						</button>
+					</div>
+	      </li>
+	    </ul>
+			<!-- Modal -->
+			<div class="modal fade" id="notfModal" tabindex="-1">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Notification</h5>
+			        <button type="button" class="close" data-dismiss="modal">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/sara.jpg"><b>Sara Casen 🔥</b> posted a post 1h ago</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/pankaj.jpg"><b>Pankaj Lalwani</b> wants to connect with you</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/rakesh.jpg"><b>Rakesh Sheikh</b> sent you friend request</a><i class="fas fa-dot-circle"></i></li>
+							</ul>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="msgModal" tabindex="-1">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Messages</h5>
+			        <button type="button" class="close" data-dismiss="modal">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/darshan.jpg"><b>Darshan Pradhan :</b> where we're going for vocation this summer?</a></li>
+								<li class="card-text"><a href="#"><img src="img/ruhi.jpg"><b>Ruhi Mehra :</b> Project has been completed !</a></li>
+								<li class="card-text"><a href="#"><img src="img/sonu.jpg"><b>Sonu Kumar :</b> hi, my colligue wants your contact no.</a></li>
+								<li class="card-text"><a href="#"><img src="img/satyam.jpg"><b>Satyam Bhuvan :</b> ya i, bought this dslr from local store</a></li>
+							</ul>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</nav>
+
+		<div class="row mn m-0">
+			<div class="col-3 p-3">
+				<div class="card wym mb-3">
+				  <div class="card-body text-center p-3">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/profile.jpg" class="prof-sm" />
+						  </div>
+							<div class="col-3 pr-1">
+								<i class="fas fa-camera"></i>
+						  </div>
+							<div class="col-3 pl-1">
+								<i class="fas fa-map-marker"></i>
+						  </div>
+							<div class="col-3 pl-0 pt-2">
+								<button class="btn">Post</button>
+						  </div>
+						</div>
+						<textarea placeholder="What's in your mind?"></textarea>
+				  </div>
+				</div>
+
+				<div class="card">
+				  <img class="card-img-top" src="img/cover.jpg" alt="Card image cap">
+				  <div class="card-body text-center">
+						<img src="img/profile.jpg" class="profPic" />
+				    <h5 class="card-title m-2">Sarita Yadav</h5>
+				    <p class="card-text mb-1">All life is an experiment. The more experiments you make the better.</p>
+						<div class="row frndfoll justify-content-center">
+							<div class="col-4 lt"><small>Friends</small><br><b>16</b></div>
+							<div class="col-4"><small>Followers</small><br><b>12K</b></div>
+						</div>
+				  </div>
+				</div>
+
+			</div>
+			<div class="col-6 pt-3 p-0">
+				<div class="jumbotron post bg-white p-3">
+					<div class="card">
+						<h6 class="card-title"><img src="img/sara.jpg" />Sara Casen 🔥<small class="text-muted">@saxen8 - Apr 19</small></h6>
+						<video class="card-img-top" controls loop autoplay poster="img/vd.jpg">
+						  <source src="img/vd.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+						</video>
+						<div class="card-body p-2">
+							<p class="card-text">I remember playing games as a little girl and always judging games on how good the water looked LOL. #LakeRidden</p>
+						</div>
+						<div class="card-footer p-1">
+							<button><i class="fas fa-heart"></i> Like</button>
+							<button><i class="fas fa-comment"></i> Comment</button>
+							<button><i class="fas fa-share-alt"></i> Share</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<h6 class="card-title"><img src="img/forbes.jpg" />Forbes India<small class="text-muted">@forbesIndia - 2h</small></h6>
+						<img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+						<div class="card-body p-2">
+							<p class="card-text">How to stop negative thoughts from sabotaging your success
+								<a href="http://on.forbes.com/6012Dw9RC">http://on.forbes.com/6012Dw9RC</a>
+							</p>
+						</div>
+						<div class="card-footer p-1">
+							<button><i class="fas fa-heart"></i> Like</button>
+							<button><i class="fas fa-comment"></i> Comment</button>
+							<button><i class="fas fa-share-alt"></i> Share</button>
+						</div>
+					</div>
+
+					<div class="card pt-2">
+						<h6 class="card-title"><img src="img/pankaj.jpg" />Pankaj Lalwani<small class="text-muted">@PankejLanwani - 3h</small></h6>
+						<img class="card-img-top" src="img/p2.jpg" alt="Card image cap">
+						<div class="card-body p-2">
+							<p class="card-text">#New Profile Pic</p>
+						</div>
+						<div class="card-footer p-1">
+							<button><i class="fas fa-heart"></i> Like</button>
+							<button><i class="fas fa-comment"></i> Comment</button>
+							<button><i class="fas fa-share-alt"></i> Share</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-3 p-3 justify-content-end">
+				<div class="card trendz">
+				  <div class="card-body pt-3 pb-2">
+				    <h5 class="card-title">Trending</h5>
+						<ul>
+							<li class="card-text"><a href="#"><i class="fas fa-bolt"></i>Best Actor Award</a></li>
+							<li class="card-text"><a href="#"><i class="fas fa-bolt"></i>National Herald</a></li>
+							<li class="card-text"><a href="#"><i class="fas fa-bolt"></i>Truth vs Hype</a></li>
+							<li class="card-text"><a href="#"><i class="fas fa-bolt"></i>SRK35Million</a></li>
+							<li class="card-text"><a href="#"><i class="fas fa-bolt"></i>KnowTheTruth</a></li>
+						</ul>
+				  </div>
+				</div>
+
+				<div class="card online mt-3">
+					<div class="card-body pt-3 pb-2">
+						<h5 class="card-title">Friends Online</h5>
+						<ul>
+							<li class="card-text"><a href="#"><img src="img/sara.jpg" />Sara Casen 🔥</a><i class="fas fa-dot-circle"></i></li>
+							<li class="card-text"><a href="#"><img src="img/pankaj.jpg" />Pankaj Lalwani</a><i class="fas fa-dot-circle"></i></li>
+							<li class="card-text"><a href="#"><img src="img/rakesh.jpg" />Rakesh Sheikh</a><i class="fas fa-dot-circle"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="row justify-content-center bg-white p-4">
+				<div class="col-4">
+					Copyright &copy; Facebook Inc. - 2018
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jq/jquery-3.2.1.min.js"></script>
+	<script src="js/bs/popper.min.js"></script>
+	<script src="js/bs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

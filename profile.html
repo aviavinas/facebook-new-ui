@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Facebook - User Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/bs/bootstrap.min.css" />
+	<link rel="icon" type="image/x-icon" href="img/ico.png">
+	<link rel="stylesheet" type="text/css" href="css/web-fonts-with-css/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <a class="navbar-brand w-25 pl-4" href="home.html">Facebook</a>
+
+			<form class="form-inline frm-srch my-2 my-lg-0 w-50">
+	      <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn" type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+	    </form>
+	    <ul class="navbar-nav w-25 justify-content-center">
+				<li class="nav-item msgs">
+	        <a class="nav-link" href="#" title="Messages">
+						<i class="fab fa-facebook-messenger"></i>
+					</a>
+	      </li>
+				<li class="nav-item notf">
+	        <a class="nav-link" href="#" title="Notification">
+						<i class="fa fa-bell"></i>
+					</a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" data-toggle="dropdown" href="profile.html" title="Profile">
+						<img src="img/profile.jpg" class="dp rounded-circle" />
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<button class="dropdown-item" type="button">
+							<a href="profile.html" title="Profile">
+								<i class="fas fa-user"></i> My Profile
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="setting.html" title="Setting">
+								<i class="fas fa-cog"></i> Setting
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="login.html" title="Logout">
+								<i class="fas fa-sign-out-alt"></i> Logout
+							</a>
+						</button>
+					</div>
+	      </li>
+	    </ul>
+			<!-- Modal -->
+			<div class="modal fade" id="notfModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Notification</h5>
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/sara.jpg"><b>Sara Casen 🔥</b> posted a post 1h ago</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/pankaj.jpg"><b>Pankaj Lalwani</b> wants to connect with you</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/rakesh.jpg"><b>Rakesh Sheikh</b> sent you friend request</a><i class="fas fa-dot-circle"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="msgModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Messages</h5>
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/darshan.jpg"><b>Darshan Pradhan :</b> where we're going for vocation this summer?</a></li>
+								<li class="card-text"><a href="#"><img src="img/ruhi.jpg"><b>Ruhi Mehra :</b> Project has been completed !</a></li>
+								<li class="card-text"><a href="#"><img src="img/sonu.jpg"><b>Sonu Kumar :</b> hi, my colligue wants your contact no.</a></li>
+								<li class="card-text"><a href="#"><img src="img/satyam.jpg"><b>Satyam Bhuvan :</b> ya i, bought this dslr from local store</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row mn m-0">
+			<div class="col-12 p-0">
+				<div class="card prof-vw">
+				  <img class="card-img-top" src="img/cover-vw.jpg" alt="Card image cap">
+				  <div class="card-body text-center">
+						<img src="img/profile.jpg" class="prof-pic" />
+				    <h3 class="card-title m-2 text-white">Sarita Yadav</h3>
+				    <h5 class="card-text mb-1 text-white">All life is an experiment. The more experiments you make the better.</h5>
+						<div class="row frndfoll justify-content-center">
+							<div class="col-1 lt"><small>Friends</small><br><b>16</b></div>
+							<div class="col-1"><small>Followers</small><br><b>12K</b></div>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+		  <div class="col-12">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" data-toggle="tab" href="#profile">Profile</a>
+				  </li>
+					<li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#gallery">Photos & Videos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#friends">Friends (16)</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="profile">
+						<div class="jumbotron bg-white pt-4 pb-5 row">
+							<div class="col-5">
+								<ul>
+									<li><i class="fas fa-at"></i> SaritaYadav</li>
+									<li><i class="fas fa-map-marker-alt"></i> Lucknow, India</li>
+									<li><i class="fas fa-calendar-alt"></i> Joined February 2018</li>
+									<li><i class="fas fa-birthday-cake"></i> Born on January 5, 2000</li>
+								</ul>
+							</div>
+							<div class="col-5">
+								<ul>
+									<li><i class="fas fa-university"></i> Studies B.Tech-IT at Lovely Professional University - LPU</li>
+									<li><i class="fas fa-heart"></i> Single</li>
+									<li><i class="fas fa-users"></i>16 Friends</li>
+									<li><i class="fas fa-bullhorn"></i>Followed by 12K people</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="gallery">
+						<div class="jumbotron bg-white pt-4 pb-5">
+							<div class="row">
+								<div class="col-3">
+									<img src="img/cover.jpg" />
+							  </div>
+								<div class="col-3">
+									<video class="card-img-top" controls loop muted autoplay poster="img/vd.jpg">
+										<source src="img/vd.mp4" type="video/mp4">
+									</video>
+							  </div>
+								<div class="col-3">
+									<video class="card-img-top" controls loop muted autoplay poster="img/vd.jpg">
+										<source src="img/aamir.mp4" type="video/mp4">
+									</video>
+							  </div>
+								<div class="col-3">
+									<img src="img/p1.jpg" />
+							  </div>
+								<div class="col-3">
+									<img src="img/hand.jfif" />
+							  </div>
+								<div class="col-3">
+									<img src="img/earth.jpg" />
+							  </div>
+								<div class="col-3">
+									<video class="card-img-top" controls loop muted autoplay poster="img/vd.jpg">
+										<source src="img/hichki.mp4" type="video/mp4">
+									</video>
+							  </div>
+								<div class="col-3">
+									<img src="img/pankaj.jpg" />
+							  </div>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" style="max-width: fit-content" role="document">
+							    <div class="modal-content">
+							      <div class="modal-body">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+											<div class="preview">
+												<img src="img/hand.jfif" />
+											</div>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				  <div class="tab-pane fade" id="friends">
+						<div class="jumbotron bg-white pt-4 pb-5">
+							<div class="row">
+								<div class="col-3">
+									<ul class="online">
+										<li class="card-text"><a href="#"><img src="img/ruhi.jpg">Ruhi Mehra</a></li>
+										<li class="card-text"><a href="#"><img src="img/aamir.jpg">Aamir Akram</a></li>
+										<li class="card-text"><a href="#"><img src="img/happy.jpg">Happy Kumar</a></li>
+										<li class="card-text"><a href="#"><img src="img/kavya.jpg">Kavya Sharma</a></li>
+									</ul>
+							  </div>
+								<div class="col-3">
+									<ul class="online">
+										<li class="card-text"><a href="#"><img src="img/chopra.jpg">Mr. Chopra</a></li>
+										<li class="card-text"><a href="#"><img src="img/sachita.jpg">Tamannah</a></li>
+										<li class="card-text"><a href="#"><img src="img/darshan.jpg">Darshan Pradhan</a></li>
+										<li class="card-text"><a href="#"><img src="img/sweta.jpg">Sweta Singh</a></li>
+									</ul>
+							  </div>
+								<div class="col-3">
+									<ul class="online">
+										<li class="card-text"><a href="#"><img src="img/sonu.jpg">Sonu Kumar</a></li>
+										<li class="card-text"><a href="#"><img src="img/sakshi.jpg">Sakshi Singh</a></li>
+										<li class="card-text"><a href="#"><img src="img/ranjan.jpg">Ranjan Kishor</a></li>
+										<li class="card-text"><a href="#"><img src="img/satyam.jpg">Satyam Bhuvan</a></li>
+									</ul>
+							  </div>
+								<div class="col-3">
+									<ul class="online">
+										<li class="card-text"><a href="#"><img src="img/kriti.jpg">Kriti Kant</a></li>
+										<li class="card-text"><a href="#"><img src="img/ravi.jpg">Ravi gupta</a></li>
+										<li class="card-text"><a href="#"><img src="img/sunil.jpg">Sunil Sinha</a></li>
+										<li class="card-text"><a href="#"><img src="img/rakesh.jpg">Rakesh Sheikh</a></li>
+									</ul>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</div>
+		</div>
+		<footer>
+			<div class="row justify-content-center bg-white p-4">
+				<div class="col-4">
+					Copyright &copy; Facebook Inc. - 2018
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jq/jquery-3.2.1.min.js"></script>
+	<script src="js/bs/popper.min.js"></script>
+	<script src="js/bs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

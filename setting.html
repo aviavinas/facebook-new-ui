@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Facebook - Setting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/bs/bootstrap.min.css" />
+	<link rel="icon" type="image/x-icon" href="img/ico.png">
+	<link rel="stylesheet" type="text/css" href="css/web-fonts-with-css/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<style>
+		.list-group-item.active {
+	    color: #fff;
+	    background-color: #f76a63;
+	    border-color: #f76a63;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <a class="navbar-brand w-25 pl-4" href="home.html">Facebook</a>
+
+			<form class="form-inline frm-srch my-2 my-lg-0 w-50">
+	      <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn" type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+	    </form>
+	    <ul class="navbar-nav w-25 justify-content-center">
+				<li class="nav-item notf">
+	        <a class="nav-link" href="#" title="Messages">
+						<i class="fab fa-facebook-messenger"></i>
+					</a>
+	      </li>
+				<li class="nav-item msgs">
+	        <a class="nav-link" href="#" title="Notification">
+						<i class="fa fa-bell"></i>
+					</a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" data-toggle="dropdown" href="profile.html" title="Profile">
+						<img src="img/profile.jpg" class="dp rounded-circle" />
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<button class="dropdown-item" type="button">
+							<a href="profile.html" title="Profile">
+								<i class="fas fa-user"></i> My Profile
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="setting.html" title="Setting">
+								<i class="fas fa-cog"></i> Setting
+							</a>
+						</button>
+						<button class="dropdown-item" type="button">
+							<a href="login.html" title="Logout">
+								<i class="fas fa-sign-out-alt"></i> Logout
+							</a>
+						</button>
+					</div>
+	      </li>
+	    </ul>
+			<!-- Modal -->
+			<div class="modal fade" id="notfModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Notification</h5>
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/sara.jpg"><b>Sara Casen 🔥</b> posted a post 1h ago</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/pankaj.jpg"><b>Pankaj Lalwani</b> wants to connect with you</a><i class="fas fa-dot-circle"></i></li>
+								<li class="card-text"><a href="#"><img src="img/rakesh.jpg"><b>Rakesh Sheikh</b> sent you friend request</a><i class="fas fa-dot-circle"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="msgModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Messages</h5>
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<ul class="online">
+								<li class="card-text"><a href="#"><img src="img/darshan.jpg"><b>Darshan Pradhan :</b> where we're going for vocation this summer?</a></li>
+								<li class="card-text"><a href="#"><img src="img/ruhi.jpg"><b>Ruhi Mehra :</b> Project has been completed !</a></li>
+								<li class="card-text"><a href="#"><img src="img/sonu.jpg"><b>Sonu Kumar :</b> hi, my colligue wants your contact no.</a></li>
+								<li class="card-text"><a href="#"><img src="img/satyam.jpg"><b>Satyam Bhuvan :</b> ya i, bought this dslr from local store</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row mn m-0">
+			<div class="col-3 p-3">
+
+				<div class="card">
+				  <img class="card-img-top" src="img/cover-vw.jpg" alt="Card image cap">
+				  <div class="card-body text-center">
+						<img src="img/profile.jpg" style="width:46%;margin-top:-30%" class="profPic" />
+				    <h5 class="card-title mt-2 mb-0">Sarita Yadav</h5>
+				  </div>
+					<div class="card-footer p-0 pt-2">
+				    <div class="list-group">
+				      <a class="list-group-item list-group-item-action active" data-toggle="list" href="#sett-gen">General</a>
+				      <a class="list-group-item list-group-item-action" data-toggle="list" href="#sett-acc">Account</a>
+				      <a class="list-group-item list-group-item-action" data-toggle="list" href="#sett-notf">Notification & Chat</a>
+				      <a class="list-group-item list-group-item-action" data-toggle="list" href="#sett-priv">Privacy</a>
+				    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-9 pt-3 p-0">
+				<div class="jumbotron sett bg-white p-3">
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="sett-gen">
+							<h6 class="border-bottom">General Setting</h6>
+							<ul>
+								<li><span class="text-muted">Name </span> Sarita Yadav <i class="fas fa-edit"></i></li>
+								<li><span class="text-muted">Username </span> @SaritaYadav <i class="fas fa-edit"></i></li>
+								<li><span class="text-muted">Contact </span> +91 7087654321 <i class="fas fa-edit"></i></li>
+								<li><span class="text-muted">Email </span> Sarita Yadav <i class="fas fa-edit"></i></li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="sett-acc">
+							<h6 class="border-bottom">Account Setting</h6>
+							<ul>
+								<li class="row">
+									<div class="col-6">Require OTP verification on Login</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Allow third party apps to access friend list</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Disable Advertisement</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Enable Keep-Alive session for always Login</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="sett-notf">
+							<h6 class="border-bottom">Notification & Chat Setting</h6>
+							<ul>
+								<li class="row">
+									<div class="col-6">Receive Notification throught SMS</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Receive Notification throught Email</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Receive Notification on Facebook</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Allow Sending chat request</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Allow Video & Audio calls</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Enable Last Seen</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Enable Delivery and Read mark</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="sett-priv">
+							<h6 class="border-bottom">Privacy Setting</h6>
+							<ul>
+								<li class="row">
+									<div class="col-6">Allow Friend of friend to Tag me</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Show Photos/Video to Public</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Allow location Sharing with third Party App</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Allow Comment from Public</div>
+									<div class="col-6"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+								</li>
+								<li class="row">
+									<div class="col-6">Appear in Search Result</div>
+									<div class="col-6"><label class="switch"><input type="checkbox" checked><span class="slider round"></span></label></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="row justify-content-center bg-white p-4">
+				<div class="col-4">
+					Copyright &copy; Facebook Inc. - 2018
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jq/jquery-3.2.1.min.js"></script>
+	<script src="js/bs/popper.min.js"></script>
+	<script src="js/bs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
